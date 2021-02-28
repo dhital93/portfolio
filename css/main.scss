@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: white;
+  h2 {
+    padding: 10px;
+  }
+  ul {
+    display: flex;
+    padding: 10px;
+    li {
+      list-style: none;
+      margin: 0.5em;
+      a {
+        text-decoration: none;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+#home {
+  display: flex;
+  img {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    margin-left: -150px;
+    margin-bottom: -19px;
+  }
+
+  .home-one {
+    width: 50%;
+    background-color: #fcc1a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      h2 {
+        font-size: 3em;
+        &::before {
+          content: "Hello,";
+          display: block;
+          color: gray;
+          font-size: 0.4em;
+        }
+      }
+      p {
+        color: gray;
+        font-size: 1.5em;
+        margin-top: 2px;
+        padding-top: 0px;
+        position: relative;
+        margin-top: -50px;
+      }
+      div {
+        button {
+          width: 150px;
+          height: 35px;
+          background-color: black;
+          color: white;
+          border-radius: 10px;
+          outline: none;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .home-two {
+    width: 50%;
+    background-color: #eef6f6;
+  }
+}
+
+#about {
+  margin: -50px;
+  .container {
+    position: relative;
+    background-color: white;
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    .img {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 300px;
+      }
+    }
+    .contain {
+      width: 50%;
+      span {
+        font-weight: bold;
+      }
+    }
+    .button {
+      button {
+        width: 120px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+#service {
+  margin: 100px;
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .our-service {
+      display: flex;
+      justify-content: space-around;
+
+      .container {
+        background-color: black;
+        color: white;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        .number {
+          background-color: white;
+          color: black;
+          height: 60px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+        .button {
+          button {
+            border-radius: 10px;
+            height: 30px;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
